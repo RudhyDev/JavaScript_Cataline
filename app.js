@@ -27,7 +27,15 @@ var maximo = 5000
 console.log('O preço dos meus Projetos varia de R$ ' + minimo + 'até R$ ' + maximo)
 */
 
-//OPERADORES
+//FUNÇÕES
 
-var x=12, y=15
-console.log(Math.pow(y,x))
+function action() {
+    console.log('Realiza a Função')
+}
+
+action()
+
+function somar(){
+    return 45*Math.PI
+}
+console.log(somar() + Math.PI)
