@@ -29,6 +29,7 @@ console.log('O preço dos meus Projetos varia de R$ ' + minimo + 'até R$ ' + ma
 
 //FUNÇÕES
 
+/*
 function action() {
     console.log('Realiza a Função')
 }
@@ -39,3 +40,40 @@ function somar(){
     return 45*Math.PI
 }
 console.log(somar() + Math.PI)
+*/
+
+//CONDICIONAIS
+
+/*
+var isActive = false
+var message = ''
+
+if(isActive){
+    message = 'Está Ativo'
+} else {
+    message = 'Não está Ativo'
+}
+console.log(message)
+
+*/
+
+//USANDO O SWITCH
+
+var trafficLight = 'vermelho'
+var message = ''
+
+switch(trafficLight){
+    case 'verde':
+        message = 'Pode passar'
+        break
+    case 'amarelo':
+        message = 'Atenção'
+        break
+    case 'vermelho':
+        message =  'Pare'
+        break
+    default:
+        message = 'Valor Inválido'    
+}
+
+console.log(message)
