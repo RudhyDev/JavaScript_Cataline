@@ -58,7 +58,7 @@ console.log(message)
 */
 
 //USANDO O SWITCH
-
+/*
 var trafficLight = 'vermelho'
 var message = ''
 
@@ -77,3 +77,72 @@ switch(trafficLight){
 }
 
 console.log(message)
+*/
+
+//LOOPINGS
+
+/*
+for(i=0; i<=25; i++) {
+    console.log(i)
+}
+*/
+
+/*
+var i=Math.PI**4
+while(i>Math.PI){
+    console.log(i)
+    i /= Math.PI**2
+}
+*/
+
+//ARRAYS
+
+/*
+var arrNOmes = ['Rudhy', 'Diego', 'Fulano', 'Beltrano']
+
+for (var i = 0; i < arrNOmes.length; i++) {
+    console.log(arrNOmes[i])
+}
+*/
+
+/*
+var arrNOmes = ['Rudhy', 'Diego', 'Fulano', 'Beltrano']
+
+var nomeinfo = prompt('Informe um nome')
+
+if (arrNOmes.indexOf(nomeinfo) !== -1){
+    console.log(nomeinfo+' está na lista')
+}else{
+    console.log(nomeinfo+' não está na lista')
+}
+
+*/
+//Manipulando a DOM
+
+/*var input = document.getElementById('idade')
+console.log(input)
+*/
+/*
+var input = document.querySelector('body div#app h1') 
+console.log(input)
+*/
+//INTERAÇÕES COM MOUSE E TECLADO
+/*
+var button = document.querySelector('#app button')  //trabalha em cima da tag button do html
+var input = document.querySelector('#app input#idade') //trabalha em cima do atributo idade que esta dentro da tag app no html
+
+
+button.addEventListener('click', function(){
+    alert('Sua idade é: ' + input.value + ' anos')
+})   //Aqui o javascript pega o valor recebido pelo input e mostra um aleta com concatenação de frases
+*/
+//OUTRA FORMA
+
+var button = document.querySelector('#app button') 
+var input = document.querySelector('#app input#idade')
+
+function showAge(){
+    alert('A sua idade é: ' +input.value)
+}
+
+button.addEventListener('click', showAge)
